@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Background</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section class="text-container">
+      <h1>Bubbles</h1>
+    </section>
+    <main class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <fegaussianblur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <fecolormatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+              result="goo"
+            />
+            <feblend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <section class="gradients-container">
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="gradient3"></div>
+        <div class="gradient4"></div>
+        <div class="gradient5"></div>
+        <div class="interactive"></div>
+      </section>
+    </main>
+  </body>
+
+  <script type="module" src="index.js"></script>
+</html>
