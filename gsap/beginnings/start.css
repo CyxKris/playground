@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #373F51;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+header .logo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header :is(.logo, li) {
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+main {
+    margin-inline: 2rem;
+    padding-block: 2rem;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 1;
+}
+
+.hero-section .top-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-section .top-hero .image {
+    border: 2px solid #121212;
+    background-color: #F0EC57;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.bottom-hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+.bottom-hero :is(.hero-box) {
+    border: 2px solid #121212;
+    border-radius: 2rem;
+    height: 150px;
+}
+
+.hero-box:is(:nth-child(1)) {
+    background-color: #E77728;
+}
+.hero-box:is(:nth-child(2)) {
+    background-color: #307351;
+}
+.hero-box:is(:nth-child(3)) {
+    background-color: #E55381;
+}
+.hero-box:is(:nth-child(4)) {
+    background-color: #D2D7DF;
+}
+
+footer {
+    border-top: 2px solid #121212;
+    background-color: #121212;
+    color: #D2D7DF;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-style: italic;
+}
