@@ -33,7 +33,7 @@ header ul {
 
 main {
     margin-inline: 2rem;
-    padding-block: 2rem;
+    padding-block-start: 2rem;
 }
 
 .hero-section h1 {
@@ -67,8 +67,16 @@ main {
 
 .bottom-hero :is(.hero-box) {
     border: 2px solid #121212;
-    border-radius: 2rem;
-    height: 150px;
+    border-radius: 1.5rem;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bottom-hero :is(.hero-box) img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .hero-box:is(:nth-child(1)) {

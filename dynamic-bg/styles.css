@@ -16,6 +16,7 @@ body {
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    user-select: none;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
     font-weight: 200;
     font-size: 3.125rem;
     color: #FFFFFF;
-    user-select: none;
+    /* user-select: none; */
     margin-bottom: 1.25rem;
 }
 
@@ -49,7 +50,6 @@ button {
     position: absolute;
     width: 200px;
     height: 275px;
-    border: 1px solid red;
 }
 
 img {

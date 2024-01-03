@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Gradient</title>
+    <style>
+      html {
+        background: #121212;
+        font-family: "Khand", sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+      h1 {
+        font-size: 8rem;
+        background: linear-gradient(
+          to right,
+          rgb(67, 124, 205),
+          rgb(69, 214, 202)
+        );
+        background-clip: content-box;
+        /* background-clip: text; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        pointer-events: none;
+        opacity: 0;
+        animation: appear 3s ease-in forwards;
+
+        &::before {
+          content: open-quote;
+        }
+        &::after {
+          content: close-quote;
+        }
+      }
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cool Design</h1>
+  </body>
+</html>

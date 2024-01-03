@@ -4,11 +4,57 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Button Animation | Menu Popup</title>
   </head>
   <body>
-    <main>
-      <h1 class="text-9xl text-red-600 underline">Hello World!</h1>
+    <main
+      class="relative h-screen overflow-hidden bg-[url('/dark-bg.jpg')] bg-cover bg-no-repeat"
+    >
+      <section class="copy">
+        <p>
+          In a future not too distant, <br />
+          Cyx learned a button drawer effect. <br />
+          Design ethos / inspired by <br />
+          x @kaihenthoiwane
+        </p>
+      </section>
+
+      <article
+        class="menu-card text-white w-content fixed bottom-0 right-0 mx-8 my-16 rounded-2xl border border-border bg-gradient-to-t from-button-gradient-1 to-button-gradient-2 px-5 py-3 backdrop-blur-sm"
+      >
+        <section class="menu-button block cursor-pointer">
+          <i class="ph ph-paper-plane-right"></i>
+        </section>
+
+        <ul class="menu-links">
+          <li
+            class="link active:bg-white group my-2 w-full cursor-pointer overflow-hidden rounded-xl px-4 py-2 "
+          >
+            <div class="link-content w-[210px] whitespace-nowrap">
+              <a
+                href="#"
+                class="group-active:text-black pointer-events-none select-none text-link group-active:font-semibold"
+              >
+                <i class="ph ph-sparkle"></i> &nbsp; Mute DM and let AI reply
+              </a>
+            </div>
+          </li>
+
+          <li
+            class="link active:bg-white group my-2 w-full cursor-pointer overflow-hidden rounded-xl px-4 py-2 "
+          >
+            <div class="link-content w-[210px] whitespace-nowrap">
+              <a
+                href="#"
+                class="group-active:text-black pointer-events-none select-none text-link group-active:font-semibold"
+              >
+                <i class="ph ph-paper-plane-right"></i> &nbsp; Reply normally
+              </a>
+            </div>
+          </li>
+        </ul>
+      </article>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
