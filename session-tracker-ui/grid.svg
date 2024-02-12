@@ -1,0 +1,18 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="40" y2="0.5" stroke="black"/>
+<line x1="40.5" y1="2.18557e-08" x2="40.5" y2="41" stroke="black"/>
+<line x1="0.5" y1="2.18557e-08" x2="0.499998" y2="41" stroke="black"/>
+<line y1="40.5" x2="40" y2="40.5" stroke="black"/>
+<line y1="40.5" x2="40" y2="40.5" stroke="black"/>
+<line x1="40.5" y1="40" x2="40.5" y2="81" stroke="black"/>
+<line x1="0.5" y1="40" x2="0.499998" y2="81" stroke="black"/>
+<line y1="80.5" x2="40" y2="80.5" stroke="black"/>
+<line x1="40" y1="0.5" x2="80" y2="0.5" stroke="black"/>
+<line x1="80.5" y1="2.18557e-08" x2="80.5" y2="41" stroke="black"/>
+<line x1="40.5" y1="2.18557e-08" x2="40.5" y2="41" stroke="black"/>
+<line x1="40" y1="40.5" x2="80" y2="40.5" stroke="black"/>
+<line x1="40" y1="40.5" x2="80" y2="40.5" stroke="black"/>
+<line x1="80.5" y1="40" x2="80.5" y2="81" stroke="black"/>
+<line x1="40.5" y1="40" x2="40.5" y2="81" stroke="black"/>
+<line x1="40" y1="80.5" x2="80" y2="80.5" stroke="black"/>
+</svg>

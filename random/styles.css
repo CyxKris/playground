@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Clash Display', sans-serif;
+    font-family: 'Dank Mono', sans-serif;
+    font-family: 'Geist', sans-serif;
+}
+
+:root {
+    /* CSS HSL */
+    --black: hsla(0, 0%, 3%, 1);
+    --eggshell: hsla(55, 38%, 89%, 1);
+    --indian-red: hsla(0, 70%, 61%, 1);
+    --dim-gray: hsla(13, 4%, 42%, 1);
+}
+
+html {
+    background-color: var(--black);
+}
+
+body {
+    /* background-color: var(--black); */
+    background-image: url("./grid.svg");
+    color: var(--eggshell);
+    height: 100dvh;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    place-content: end;
+}
+
+section.hero {
+    max-width: 90%;
+    padding: 1rem 0 2rem 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+
+    @media (min-width: 1024px) {
+        max-width: 60%;
+    }
+
+    & h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        line-height: 1;
+        text-wrap: balance;
+
+        @media (min-width: 768px) {
+            font-size: 5.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 7.5rem;
+        }
+    }
+
+    & p {
+        margin-block: 1rem 1.25rem;
+        font-weight: 200;
+        line-height: 1.5;
+        text-wrap: balance;
+
+        @media (min-width: 500px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    & button {
+        font-size: 1.2rem;
+        border: 2px solid var(--eggshell);
+        background-color: var(--black);
+        color: var(--eggshell);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+            border: 2px solid var(--indian-red);
+            color: var(--indian-red);
+        }
+    }
+}

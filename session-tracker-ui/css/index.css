@@ -1,0 +1,46 @@
+
+main {
+    text-align: center;
+    text-wrap: balance;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 80%;
+        font-weight: 100;
+
+        @media (min-width: 600px) {
+            font-size: 5rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 7rem;
+        }
+    }
+
+    a {
+        display: inline-block;
+        background-color: var(--seasalt);
+        color: var(--black);
+        text-decoration: none;
+        padding: .5rem 2rem;
+        border-radius: 8px;
+        margin-block: 2rem;
+
+        cursor: pointer;
+        transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        @media (min-width: 600px) {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            box-shadow: 5px 5px var(--auburn);
+        }
+
+        &:active {
+            background-color: var(--auburn);
+            color: var(--seasalt);
+            box-shadow: none;
+        }
+    }
+}

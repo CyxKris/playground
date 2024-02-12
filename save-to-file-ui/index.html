@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save.me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p>SAVE.ME</p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E5ff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+  </header>
+
+  <main>
+    <h1>Save your Data.</h1>
+
+    <form>
+      <div class="input">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter Name" required>
+      </div>
+
+      <div class="input-message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter Message" spellcheck="true" rows="5" required></textarea>
+      </div>
+
+      <div class="input">
+        <label for="file-name">File Name</label>
+        <input type="text" name="file-name" id="file-name" placeholder="Enter File Name">
+      </div>
+
+      <div class="buttons">
+        <button id="clear">Clear Fields</button>
+        <button id="save" type="submit">Save to file</button>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </main>
+</body>
+</html>

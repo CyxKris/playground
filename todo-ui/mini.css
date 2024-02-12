@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+:root {
+    --black: #121212;
+    --beige: #FFF9DB;
+
+    --bg: var(--beige);
+    --fg: var(--black);
+    --accent: indianred;
+
+    --shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+/*html["theme=dark"] :root {*/
+/*    --bg: var(--black);*/
+/*    --fg: var(--beige);*/
+/*                      }*/
+
+body {
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+h1,
+h2 {
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    margin-block-end: .5rem;
+    font-size: 3.5rem;
+}
+
+form {
+    min-width: 600px;
+    border: 3px solid var(--black);
+    border-radius: .5rem;
+    padding: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    box-shadow: var(--shadow);
+}
+
+
+input,
+select {
+    border: 2px solid var(--black);
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+input:-webkit-autofill {
+    -webkit-background-clip: text;
+}
+
+button {
+    border: none;
+    background-color: var(--fg);
+    color: var(--bg);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    padding-block: 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
